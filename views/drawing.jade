@@ -1,0 +1,37 @@
+extends layout
+
+block content
+  .container
+      .colorscanvas
+        .colors
+          .black.color-pallet
+          .red.color-pallet
+          .green.color-pallet
+          .blue.color-pallet
+          .pink.color-pallet
+          .purple.color-pallet
+          .yellow.color-pallet
+        canvas( id="draw", resize="true", keepalive="true" )
+      .tools
+          .pen.tool-pallet
+            img(src='/images/pen.svg',class='pen')
+          .brush.tool-pallet
+            img(src='/images/brush.svg',class='brush')
+          .line.tool-pallet
+            img(src='/images/line.svg',class='line')
+          .triangle.tool-pallet
+            img(src='/images/triangle.svg',class='triangle')
+          .circle.tool-pallet
+            img(src='/images/circle.svg',class='circle')
+          .rectangle.tool-pallet
+            img(src='/images/rec.svg',class='rectangle') 
+          .hand.tool-pallet  
+            img(src='/images/select.svg',class='hand')
+          .clear.tool-pallet
+            img(src='/images/clear.svg',class='clear')
+          .undo.tool-pallet
+            img(src='/images/undo.svg',class='undo')
+          .select.tool-pallet
+            img(src='/images/select.svg',class='select')
+      
+  script( type="text/paperscript", src="javascripts/draw1.js", canvas="draw")
