@@ -1,2 +1,1 @@
-DrawInSync - A Collaborative Drawing Tool
-
+DrawInSync - A Collaborative Drawing Tool with chat option
